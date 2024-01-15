@@ -1,0 +1,540 @@
+ /* Property listings */
+/* Archive */
+/*make this css professional */
+:root {
+    --rman-title-color : #ffad00;
+    --rman-button-bg : #ffad00;
+    --rman-button-hover-bg : #000000;
+    --rman-button-text-color : #ffffff;
+    --rman-button-hover-text_color : #ffffff;
+    --rman-description-color : #000000;
+    --rman-price-color : #000000;
+}
+.single-properties .fl-row-content {
+    padding: 15px;
+}
+.social-share-buttons button {
+    cursor: pointer;
+    transition: background-color .3s ease;
+    font-size: 29px;
+    border: 1px solid var(--rman-button-bg);
+    min-width: 60px;
+    min-height: 60px;
+    border-radius: 15px;
+    background: transparent !important;
+    margin-bottom: 5px;
+}
+
+.social-share-buttons button {
+    background-color: transparent;
+}
+.social-share-buttons {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease-out; /* You can adjust the duration and easing */
+}
+.property-single__sharing .share {
+    min-height: 41px;
+}
+.property-single__sharing .share {
+    transition: min-height 0.5s ease-in;
+}
+.property-single__sharing .share:has(.social-share-buttons.visible) {
+    min-height: 100px;
+}
+.social-share-buttons.visible {
+    max-height: 500px; /* You may need to adjust this value based on the content height */
+}
+.property__grid {
+    display: grid;
+    gap: 50px 20px;
+}
+.property__button.load-more {
+    margin-top: 100px;
+    text-align: center;
+}
+#properties-map-section {
+    margin-top: 30px;
+}
+.rman-properties-gallery .swiper-slide img {
+    width: 100%;
+    height: 100% !important;
+    object-fit: cover !important;
+    padding: 0px !important;
+}
+.rman-properties-gallery .swiper-slide {
+    padding: 0px !important;
+    overflow: hidden;
+}
+.single-properties .mfp-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.single-properties button.mfp-close.mfp-close.mfp-close.mfp-close.mfp-close {
+    top: -5px !important;
+    right: -10px;
+    background: var(--rman-button-bg) !important;
+    color: var(--rman-button-text-color);
+    border-radius: 50%;
+    opacity: 1;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.single-properties .mfp-content img {
+    width: 100%;
+    height: 100%;
+}
+div#ma-popup-form {
+    background: rgb(255 255 255 / 84%);
+    padding: 100px 30px;
+}
+div#ma-popup-form input {
+    min-height: 60px;
+}
+div#ma-popup-form *::placeholder {
+    font-size: 15px;
+}
+div#ma-popup-form input, div#ma-popup-form textarea {
+    border: 1px solid #ccc;
+}
+div#ma-popup-form *[type="submit"] {
+    border: none;
+}
+h2 {
+    font-size: 36px;
+    line-height: 1.4;
+    letter-spacing: 0;
+    color: #ffad00;
+    font-family: abril fatface,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: none;
+}
+.fab.fa-facebook-f {
+    color: #1877F2; /* Facebook Color */
+}
+
+.fab.fa-twitter {
+    color: #1DA1F2; /* Twitter Color */
+}
+
+.fab.fa-instagram {
+    color: #C13584; /* Instagram Color (can vary based on gradient) */
+}
+
+.fab.fa-linkedin-in {
+    color: #0077B5; /* LinkedIn Color */
+}
+
+.fab.fa-pinterest-p {
+    color: #BD081C; /* Pinterest Color */
+}
+
+.fab.fa-tiktok {
+    color: #000000; /* TikTok Color (generally black) */
+}
+
+.fab.fa-font-awesome-flag {
+    color: #339AF0; /* FontAwesome Brand Color */
+}
+/* WhatsApp styling */
+.fab.fa-whatsapp {
+    color: #25D366;
+    background-color: white; /* optional if you want a white background for contrast */
+    border-radius: 50%; /* optional if you want a circular background */
+    padding: 5px; /* space around the icon if you're using a background color */
+}
+
+/* Gmail styling - given Gmail's logo is more complex, the primary color (red) is used here */
+.far.fa-envelope {
+    color: #D44638;
+    background-color: #FFFFFF; /* to represent the secondary color of Gmail */
+    border-radius: 50%; /* optional if you want a circular background */
+    padding: 5px; /* space around the icon if you're using a background color */
+}
+@media (min-width: 768px) {
+    .property__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.property__card {
+    display: flex;
+    flex-direction: column;
+}
+.property__card > * + * {
+    margin-bottom: 0;
+}
+.property__image-container {
+    max-height: 450px;
+    overflow: hidden;
+}
+.property__image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.property__title {
+    font-size: 25px;
+    color: var(--rman-title-color);
+    margin-top: 45px;
+    margin-bottom: 30px;
+}
+.property__price {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--rman-price-color );
+}
+.property__description {
+    font-size: 18px;
+    margin-top: 8px;
+    margin-bottom: 24px;
+}
+.orange-button {
+    background: var(--rman-button-bg);
+    color: var(--rman-button-text-color) !important;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    width: 280px;
+    padding: 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    transition: .3s;
+    line-height: 1;
+}
+.orange-button:hover {
+    background: var(--rman-button-hover-bg);
+    color: var(--rman-button-hover-text_color);
+}
+.property__card .orange-button , .property__button.load-more .orange-button {
+    margin: initial;
+}
+.property__card .property__button {
+    margin-top: 30px;
+}
+.property__image-container img{
+    object-fit: cover;
+    height: 450px;
+    width: 100%;
+}
+.epc-image-container {
+    display: flex;
+    align-items: center;
+}
+.epc-image-container img {
+    width: 60px;
+    margin-left: 10px;
+}
+.ma-wishlist-container .wishlist-icon i {
+    background: var(--rman-button-bg);
+    color: var(--rman-button-text-color);
+    padding: 20px;
+    font-size: 32px;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 2px 48px 2px rgb(0 0 0 / 38%);
+}
+.ma-wishlist-container {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    z-index: 99;
+}
+/* Add this CSS to your stylesheet */
+.ma-wishlist-container .wishlist-lists {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.ma-wishlist-container .wishlist-lists.visible {
+    display: block;
+    opacity: 1;
+    margin-bottom: 30px;
+}
+.ma-wishlist-container .wishlist-icon {
+    position: relative;
+    width: fit-content;
+    cursor: pointer;
+}
+.ma-wishlist-container .wishlist-lists {
+    width: 100%;
+    background: #ffffff;
+}
+.ma-wishlist-container .wishlist-lists .wishlist-item a {
+    color: #000000;
+    padding: 10px;
+    width: 95%;
+}
+.ma-wishlist-container .wishlist-lists .wishlist-item {
+    display: flex;
+    align-items: center;
+}
+.ma-wishlist-container .wishlist-lists .wishlist-item:nth-child(odd) {
+    background: #cccccc;
+}
+.ma-wishlist-container .wishlist-lists .wishlist-item:nth-child(even) {
+    background: rgb(204 204 204 / 25%);
+}
+.ma-wishlist-container button.delete-button {
+    background: transparent;
+    border: none;
+    color: #000000;
+    height: 5%;
+    width: 5%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ma-wishlist-container .wishlist-icon .wishlist-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: #000000;
+    color: #ffffff;
+    min-width: 30px;
+    min-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+a.wishlist-btn.has-wishlist {
+    pointer-events: none;
+    opacity: 0.5;
+}
+/* @media print {
+    
+} */
+@media (max-width: 767px) {
+    .property__image-container {
+        max-height: 240px;
+    }
+    .property__image-container img{
+        height: 240px;
+    }
+}
+@media (max-width: 1023px) {
+    .property__image-container {
+        max-height: 360px;
+    }
+}
+
+.property-single__title {
+
+}
+.property-single__price {
+
+}
+.property-single__price--intro {
+    font-weight: 700;
+}
+.property-single__basics {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 40px;
+    background-color: #F3F3F3;
+    list-style: none;
+    margin: 50px 0;
+}
+.property-single__basics .item {
+    flex: 1 0 25%;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+.property-single__basics .item p:first-child {
+
+}
+.property-single__basics .item p:last-child {
+
+}
+.property-single__basics .item p:last-child i {
+    font-size: 40px;
+    margin-right: 8px;
+}
+.property-single__basics .item p:last-child span {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.property-single__sharing {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+}
+.property-single__sharing .buttons {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+.property-single__sharing .buttons .orange-button {
+    margin: initial;
+    margin-bottom: 20px;
+}
+.property-single__sharing .buttons .orange-button:has(+ .orange-button) {
+    margin-right: 20px;
+}
+.property-single__sharing .share {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    position: relative;
+}
+.property-single__sharing .share .social-share-buttons {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    min-width: 320px;
+}
+.property-single__sharing .share a {
+    margin-left: 16px;
+}
+.property-single__sharing .share > a i {
+    font-size: 40px;
+    color: #FFAD00;
+}
+
+.key-features {
+
+}
+.key-features p {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.key-features p span {
+    font-weight: 400;
+}
+.key-features__misc p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* Property Carousel */
+.product-gallery {
+    position: relative;
+    overflow: hidden;
+}
+.carousel-properties {
+    margin-bottom: 30px;
+}
+.carousel-properties .swiper-slide {
+    height: 640px;
+    padding: 20px;
+    padding-bottom: 0;
+    text-align: center;
+}
+.carousel-properties .swiper-slide img {
+    height: 100%;
+    object-fit: contain;
+}
+.carousel-properties .image {
+    height: 100%;
+}
+.carousel-properties .swiper-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.carousel-properties .swiper-nav-prev, .carousel-properties .swiper-nav-next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(50%);
+    z-index: 15;
+    background-color: #FFAD00;
+    color: #fff;
+    font-size: 32px;
+    font-weight: 100;
+    width: 58px;
+    height: 58px;
+}
+.carousel-properties .swiper-nav-prev {
+    left: 0;
+}
+.carousel-properties .swiper-nav-next {
+    right: 0;
+}
+
+.carousel-properties-thumbs {
+    padding: 0;
+}
+.carousel-properties-thumbs .swiper-slide {
+    height: 270px;
+    text-align: center;
+    background-color: var(--au-grey-light);
+}
+.carousel-properties-thumbs .swiper-slide img {
+    height: 100%;
+    object-fit: cover;
+    padding: 5px;
+}
+.rman-properties-gallery {
+    overflow: hidden;
+}
+a#rman_load-more {
+    margin: 0 auto;
+}
+.carousel-properties {
+    position: relative;
+}
+@media (max-width: 767px) {
+    .carousel-properties .swiper-slide {
+        height: 340px;
+    }
+    .carousel-properties .swiper-nav-prev, .carousel-properties .swiper-nav-next {
+        position: absolute;
+        top: calc(170px - (40px / 2));
+        transform: translateY(50%);
+        z-index: 15;
+        font-size: 24px;
+        height: 40px;
+        width: 40px;
+    }
+    .property-single__sharing {
+        grid-template-columns: 1fr;
+    }
+    .property-single__sharing .share {
+        justify-content: center;
+    }
+    .property-single__sharing .buttons {
+        justify-content: center;
+    }
+    .property-single__sharing .buttons .orange-button:has(+.orange-button) {
+        margin: 10px auto;
+    }
+    .property-single__sharing .share .social-share-buttons {
+        left: 0;
+    }
+    .property-single__sharing .share:has(.social-share-buttons.visible) {
+        min-height: 160px;
+    }
+    
+}
+@media (max-width: 1023px) {
+    .carousel-properties .swiper-slide {
+        height: 460px;
+    }
+    .carousel-properties .swiper-nav-prev, .carousel-properties .swiper-nav-next {
+        position: absolute;
+        top: calc(230px - (58px / 2));
+        transform: translateY(50%);
+        z-index: 15;
+    }
+}
